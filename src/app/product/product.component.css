@@ -1,0 +1,24 @@
+
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 1900px;
+}
+
+
+.btn-outline-success {
+    color:  #28a745;
+    font-style: bold;
+}
+
+.card{
+    margin: 35px;
+    width: 25%;
+    float: left;
+    
+}
+
+button{
+    margin-left: 5px;
+}

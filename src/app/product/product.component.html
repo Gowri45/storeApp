@@ -1,0 +1,21 @@
+
+<div class="container">
+<div class="card" style="width: 18rem;" *ngFor="let item of product" >
+  
+        <img src="{{item.image}}" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">{{item.name | uppercase}}</h5>
+          <div *ngIf="item.isAvailable">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Price: ${{item.price}}</li>
+        </ul>
+        <div class="card-body">
+            <button href="#" class="btn btn-primary" style="background-color: rgb(99, 96, 96)" [disabled]=!(item.isAvailable)>Add to cart</button>
+            <button href="#" class="btn btn-primary" style="background-color: rgb(35, 129, 35)" [disabled]=!(item.isAvailable)>Buy Now</button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div> 
